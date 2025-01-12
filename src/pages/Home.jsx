@@ -3,15 +3,13 @@ import React from "react";
 const Home = () => {
   return (
     <main className="mainDiv">
-      <section className="homeSection">
+      <section className="firstHomeSection">
         <div className="titleContent">
-          <h1 className="titleFirstPage">
+          <h1 className="titleFirstSection">
             {" "}
             DÉCOUVREZ <br />
             MON NOUVEAU PROGRAMME !{" "}
           </h1>
-        </div>
-        <div className="buttons">
           <button className="discoveryButton">JE DÉCOUVRE</button>
         </div>
         <div className="firstImageDiv">
@@ -22,27 +20,44 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="homeSection">
-        <h1> Foto + Dscrizione + Bottone </h1>
+      <section className="secondHomeSection">
         <div className="secondImageDiv">
           <img
             className="secondImage"
-            src="/images/Dalila.avif"
+            src="/images/secondSection.jpg"
             alt="Second Section photo"
           />
         </div>
-      </section>
-      <section className="homeSection">
-        <h1> Programmi + Bottone </h1>
-        <div className="thirdImageDiv">
-          <img
-            className="thirdImage"
-            src="/images/Dalila.avif"
-            alt="Third Section photo"
-          />
+        <div className="textContent">
+          <h1 className="titleSecondSection">
+            {" "}
+            Hello ! My Name is ...... !<br /> Together we'll do amazing things !{" "}
+          </h1>
+          <p className="textSecondSection">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            labore vel sapiente neque? Dicta accusantium iure magnam vitae
+            aspernatur sit necessitatibus dignissimos. Odit voluptate vel
+            voluptas a, mollitia minima quia?
+          </p>
         </div>
       </section>
-      <section className="homeSection">
+      <section className="thirdHomeSection">
+        <div className="titleContent">
+          <h1 className="titleThirdSection">
+            {" "}
+            Mon nouveau programme vient de sortir{" "}
+          </h1>
+          <div className="thirdImageDiv">
+            <img
+              className="thirdImage"
+              src="/images/thirdSection.jpg"
+              alt="Third Section photo"
+            />
+          </div>
+          <button className="discoveryButton">I WANT IT ! </button>
+        </div>
+      </section>
+      <section className="forthHomeSection">
         <h1> Eventi + Bottone </h1>
         <div className="cardsDiv">
           <img
@@ -52,7 +67,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="homeSection">
+      <section className="fifthHomeSection">
         <h1> Informazioni su socials + Bottone </h1>
         <div className="fifthImageDiv">
           <img

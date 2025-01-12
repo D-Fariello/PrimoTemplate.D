@@ -41,19 +41,20 @@ header.header {
   }
 }
 
-////////////// Home Page /////////////
+///////////////////////////////////////////////// Home Page /////////////////////////////////////////////
 
 //////////////// Section 1 ///////////////////
 
-.homeSection {
+.firstHomeSection {
   .titleContent {
-    h1.titleFirstPage {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+
+    h1.titleFirstSection {
       @include mixins.title-style;
-      display: flex;
-      position: absolute;
-      justify-content: center;
-      margin-top: 10%;
-      width: 100%;
     }
   }
 
@@ -61,10 +62,11 @@ header.header {
     @include mixins.button-style;
     display: inline-block;
     position: absolute;
-    margin-top: 10%;
+    margin-top: 20%;
     width: 13%;
     padding: 12px 24px;
     text-align: center;
+    cursor: pointer;
   }
 
   img.firstImage {
@@ -72,4 +74,82 @@ header.header {
     height: 700px;
     width: 100%;
   }
+}
+
+//////////////// Section 2 ////////////////
+
+section.secondHomeSection {
+  display: flex;
+  flex-direction: row;
+  background-color: variables.$second-background-color;
+
+  img.secondImage {
+    height: 700px;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: variables.$title-color;
+    margin-top: 15%;
+    margin-left: 10%;
+
+    h1.titleSecondSection {
+      @include mixins.title-style;
+      font-size: 2.5rem;
+      width: 100;
+    }
+
+    p.textSecondSection {
+      font-family: variables.$primary-font-family;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 22px;
+      color: variables.$paragraph-color-light;
+      width: 65%;
+    }
+  }
+}
+
+
+//////////////// Section 3 ////////////////
+
+
+.thirdHomeSection {
+    .titleContent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      width: 100%;
+      background-color: variables.$third-background-color;
+      flex-direction: column;
+  
+      h1.titleThirdSection {
+        @include mixins.title-style;
+        color: black;
+      }
+
+      img.thirdImage {
+        height: 700px;
+    }
+
+    .discoveryButton {
+        @include mixins.button-style;
+        display: inline-block;
+        margin-top: 2%;
+        width: 13%;
+        padding: 12px 24px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  
+   
 }
