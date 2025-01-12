@@ -4,11 +4,20 @@ const Home = () => {
   return (
     <main className="mainDiv">
       <section className="homeSection">
-        <h1> Foto + Bottone </h1>
+        <div className="titleContent">
+          <h1 className="titleFirstPage">
+            {" "}
+            DÉCOUVREZ <br />
+            MON NOUVEAU PROGRAMME !{" "}
+          </h1>
+        </div>
+        <div className="buttons">
+          <button className="discoveryButton">JE DÉCOUVRE</button>
+        </div>
         <div className="firstImageDiv">
           <img
             className="firstImage"
-            src="/images/Dalila.avif"
+            src="/images/firstSection.jpg"
             alt="Home photo"
           />
         </div>
