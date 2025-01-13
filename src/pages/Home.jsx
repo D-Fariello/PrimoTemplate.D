@@ -58,13 +58,26 @@ const Home = () => {
         </div>
       </section>
       <section className="forthHomeSection">
-        <h1> Eventi + Bottone </h1>
-        <div className="cardsDiv">
-          <img
-            className="cardsImage"
-            src="/images/Dalila.avif"
-            alt="cardsImage"
-          />
+        <div className="titleContent">
+          <h1 className="titleForthSection">
+            {" "}
+            Envie de partager en direct une super session sportive ? N'attendez
+            plus !{" "}
+          </h1>
+          <p className="textSecondSection">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            labore vel sapiente neque? Dicta accusantium iure magnam vitae
+            aspernatur sit necessitatibus dignissimos. Odit voluptate vel
+            voluptas a, mollitia minima quia?
+          </p>
+          <div className="cardsDiv">
+            <img
+              className="cardsImage"
+              src="/images/imageOne.jpg"
+              alt="cardsImage"
+            />
+          </div>
+          <button className="discoveryButton">JE DÉCOUVRE</button>
         </div>
       </section>
       <section className="fifthHomeSection">

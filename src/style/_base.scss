@@ -68,11 +68,13 @@ header.header {
     text-align: center;
     cursor: pointer;
   }
-
-  img.firstImage {
-    object-fit: cover;
+  .firstImageDiv {
     height: 700px;
-    width: 100%;
+    img.firstImage {
+      object-fit: cover;
+      height: 700px;
+      width: 100%;
+    }
   }
 }
 
@@ -117,39 +119,79 @@ section.secondHomeSection {
   }
 }
 
-
 //////////////// Section 3 ////////////////
 
-
 .thirdHomeSection {
-    .titleContent {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5%;
-      width: 100%;
-      background-color: variables.$third-background-color;
-      flex-direction: column;
-  
-      h1.titleThirdSection {
-        @include mixins.title-style;
-        color: black;
-      }
+  .titleContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+    background-color: variables.$third-background-color;
+    flex-direction: column;
 
-      img.thirdImage {
-        height: 700px;
+    h1.titleThirdSection {
+      @include mixins.title-style;
+      color: black;
+    }
+
+    img.thirdImage {
+      height: 700px;
     }
 
     .discoveryButton {
-        @include mixins.button-style;
-        display: inline-block;
-        margin-top: 2%;
-        width: 13%;
-        padding: 12px 24px;
-        text-align: center;
-        cursor: pointer;
-      }
+      @include mixins.button-style;
+      display: inline-block;
+      margin-top: 2%;
+      width: 13%;
+      padding: 12px 24px;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 3%;
     }
-  
-   
+  }
+}
+
+//////////////// Section 4 ///////////////////
+
+.forthHomeSection {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$second-background-color;
+
+  .titleContent {
+    .titleForthSection {
+      @include mixins.title-style;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+  p.textSecondSection {
+    font-family: variables.$primary-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    color: variables.$paragraph-color-light;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  img.cardsImage {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.discoveryButton {
+    @include mixins.button-style;
+    display: inline-block;
+    margin-top: 2%;
+    width: 13%;
+    padding: 12px 24px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 3%;
+  }
 }
