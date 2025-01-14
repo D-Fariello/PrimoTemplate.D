@@ -81,13 +81,16 @@ const Home = () => {
         </div>
       </section>
       <section className="fifthHomeSection">
-        <h1> Informazioni su socials + Bottone </h1>
-        <div className="fifthImageDiv">
-          <img
-            className="fifthImage"
-            src="/images/Dalila.avif"
-            alt="Fifth Section photo"
-          />
+        <div className="titleContent">
+          <h1 className="titleFifthSection"> Follow Me on Instagram </h1>
+          <div className="fifthImageDiv">
+            <img
+              className="fifthImage"
+              src="/images/imageSix.jpg"
+              alt="Fifth Section photo"
+            />
+          </div>
+          <button className="discoveryButton"> Follow ! </button>
         </div>
       </section>
     </main>
