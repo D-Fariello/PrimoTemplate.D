@@ -14,25 +14,25 @@ const Header = () => {
         </NavLink>
       </div>
       <nav className="main-nav">
-        <Link to="/top" className="button-nav">
+        <Link to="/" className="button-nav">
           ACCUEIL
         </Link>
-        <Link to="/#" className="button-nav">
+        <Link to="/personal-page" className="button-nav">
           PERSONAL'S PAGE
         </Link>
-        <Link to="/#" className="button-nav">
+        <Link to="/mes-programmes" className="button-nav">
           MES PROGRAMMES
         </Link>
-        <Link to="/#" className="button-nav">
+        <Link to="/events" className="button-nav">
           MES EVENEMENTS
         </Link>
-        <Link to="/#" className="button-nav">
+        <Link to="/blog" className="button-nav">
           BLOG
         </Link>
-        <Link to="/#" className="button-nav">
+        <Link to="/contacts" className="button-nav">
           CONTACTS
         </Link>
-        <Link to="/#" className="button-nav">
+        <Link to="/faq-page" className="button-nav">
           FAQ
         </Link>
       </nav>

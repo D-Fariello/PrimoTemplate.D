@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <main className="mainDiv">
       <section className="firstHomeSection">
@@ -10,7 +13,12 @@ const Home = () => {
             DÉCOUVREZ <br />
             MON NOUVEAU PROGRAMME !{" "}
           </h1>
-          <button className="discoveryButton">JE DÉCOUVRE</button>
+          <button
+            className="discoveryButton"
+            onClick={() => navigate("/mes-programmes")}
+          >
+            JE DÉCOUVRE
+          </button>
         </div>
         <div className="firstImageDiv">
           <img
@@ -39,6 +47,12 @@ const Home = () => {
             aspernatur sit necessitatibus dignissimos. Odit voluptate vel
             voluptas a, mollitia minima quia?
           </p>
+          <button
+            className="discoveryButton"
+            onClick={() => navigate("/personal-page")}
+          >
+            JE DÉCOUVRE
+          </button>
         </div>
       </section>
       <section className="thirdHomeSection">
@@ -54,7 +68,12 @@ const Home = () => {
               alt="Third Section photo"
             />
           </div>
-          <button className="discoveryButton">I WANT IT ! </button>
+          <button
+            className="discoveryButton"
+            onClick={() => navigate("/mes-programmes")}
+          >
+            I WANT IT !{" "}
+          </button>
         </div>
       </section>
       <section className="forthHomeSection">
@@ -64,7 +83,7 @@ const Home = () => {
             Envie de partager en direct une super session sportive ? N'attendez
             plus !{" "}
           </h1>
-          <p className="textSecondSection">
+          <p className="textForthSection">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
             labore vel sapiente neque? Dicta accusantium iure magnam vitae
             aspernatur sit necessitatibus dignissimos. Odit voluptate vel
@@ -77,7 +96,12 @@ const Home = () => {
               alt="cardsImage"
             />
           </div>
-          <button className="discoveryButton">JE DÉCOUVRE</button>
+          <button
+            className="discoveryButton"
+            onClick={() => navigate("/events")}
+          >
+            JE DÉCOUVRE
+          </button>
         </div>
       </section>
       <section className="fifthHomeSection">

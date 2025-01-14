@@ -20,13 +20,13 @@ const Footer = () => {
           </p>
         </div>
         <nav className="main-nav">
-          <Link to="/top" className="button-nav">
+          <Link to="/" className="button-nav">
             Menu
           </Link>
-          <Link to="/#" className="button-nav">
-            Contact
+          <Link to="/contacts" className="button-nav">
+            Contacts
           </Link>
-          <Link to="/#" className="button-nav">
+          <Link to="/mes-programmes" className="button-nav">
             MES PROGRAMMES
           </Link>
           <Link to="/#" className="button-nav">
