@@ -334,3 +334,232 @@ footer.footerSection {
     }
   }
 }
+
+
+/////////// Responsive Styles ///////////
+
+////// Tablet: 890px to 1024px ///////
+@media (min-width: 890px) and (max-width: 1024px) {
+    header.header {
+      nav.main-nav {
+        padding: 20px;
+        gap: 20px;
+      }
+  
+      .logoImage {
+        .mainNavLogo-image {
+          width: 60px;
+        }
+      }
+    }
+  
+    .firstHomeSection {
+      .titleContent {
+        margin-top: 15%;
+      }
+  
+      .discoveryButton {
+        width: 20%;
+      }
+  
+      .firstImageDiv img.firstImage {
+        height: 500px;
+      }
+    }
+  
+    section.secondHomeSection {
+      flex-direction: column;
+      img.secondImage {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+      }
+  
+      .textContent {
+        margin-left: 5%;
+        margin-top: 10%;
+        text-align: center;
+  
+        h1.titleSecondSection {
+          font-size: 2rem;
+        }
+  
+        p.textSecondSection {
+          width: 90%;
+        }
+      }
+    }
+  
+    .thirdHomeSection {
+      .titleContent {
+        margin-top: 8%;
+        h1.titleThirdSection {
+          font-size: 2rem;
+        }
+  
+        .discoveryButton {
+          width: 25%;
+        }
+      }
+    }
+  
+    .forthHomeSection,
+    .fifthHomeSection {
+      .titleContent {
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+  
+      img.cardsImage,
+      img.fifthImage {
+        width: 200px;
+        height: 200px;
+      }
+  
+      p.textForthSection {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+  
+      .discoveryButton {
+        width: 20%;
+      }
+    }
+  
+    footer.footerSection {
+      .footerContainer {
+        nav.main-nav {
+          padding: 20px;
+        }
+  
+        .logoImage {
+          margin-left: 3%;
+          margin-top: 2%;
+  
+          p.aboutMe {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  
+  ////// Mobile: 320px to 768px ///////
+  @media (max-width: 768px) {
+    header.header {
+      nav.main-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+      }
+  
+      .logoImage {
+        position: static;
+        .mainNavLogo-image {
+          width: 50px;
+        }
+      }
+    }
+  
+    .firstHomeSection {
+      .titleContent {
+        margin-top: 20%;
+      }
+  
+      .discoveryButton {
+        width: 50%;
+      }
+  
+      .firstImageDiv img.firstImage {
+        height: 300px;
+      }
+    }
+  
+    section.secondHomeSection {
+      flex-direction: column;
+  
+      img.secondImage {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+      }
+  
+      .textContent {
+        margin: 0;
+        text-align: center;
+  
+        h1.titleSecondSection {
+          font-size: 1.8rem;
+        }
+  
+        p.textSecondSection {
+          width: 90%;
+        }
+  
+        .discoveryButton {
+          width: 50%;
+        }
+      }
+    }
+  
+    .thirdHomeSection {
+      .titleContent {
+        margin-top: 10%;
+  
+        h1.titleThirdSection {
+          font-size: 1.8rem;
+        }
+  
+        .discoveryButton {
+          width: 50%;
+        }
+      }
+    }
+  
+    .forthHomeSection,
+    .fifthHomeSection {
+      .titleContent {
+        h1 {
+          font-size: 1.6rem;
+        }
+      }
+  
+      img.cardsImage,
+      img.fifthImage {
+        width: 150px;
+        height: 150px;
+      }
+  
+      p.textForthSection {
+        margin: 5%;
+      }
+  
+      .discoveryButton {
+        width: 50%;
+      }
+    }
+  
+    footer.footerSection {
+      .footerContainer {
+        nav.main-nav {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+          gap: 10px;
+        }
+  
+        .logoImage {
+          flex-direction: column;
+          margin-left: 0;
+  
+          p.aboutMe {
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  
