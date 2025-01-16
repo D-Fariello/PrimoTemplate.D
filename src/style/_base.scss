@@ -291,25 +291,16 @@ section.secondHomeSection {
     
 
     button.carouselButton.prev {
-      background-color: transparent;
-      border: none;
-      position: absolute;
-      display: flex;
+        @include mixins.carousel-style;
       margin-right: 90%;
       flex-direction: row;
-      font-size: 30px;
-      color: white;
     }
 
     button.carouselButton.next {
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        display: flex;
+        @include mixins.carousel-style;
         margin-left: 90%;
         flex-direction: row;
         font-size: 30px;
-        color: white;
       }
     }
   }

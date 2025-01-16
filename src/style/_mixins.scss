@@ -13,3 +13,13 @@
   color: variables.$title-color;
   font-weight: variables.$text-font-weight;
 }
+
+@mixin carousel-style {
+  background-color: variables.$carousel-background-color;
+  border: variables.$carousel-border;
+  position: variables.$carousel-position;
+  display: variables.$carousel-display;
+  font-size: variables.$carousel-font-size;
+  cursor: variables.$carousel-cursor;
+  color: variables.$carousel-color;
+}
