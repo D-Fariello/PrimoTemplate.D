@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Carousel from "../components/Carousel";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -89,13 +90,21 @@ const Home = () => {
             aspernatur sit necessitatibus dignissimos. Odit voluptate vel
             voluptas a, mollitia minima quia?
           </p>
-          <div className="cardsDiv">
+          {/* <div className="carouselContainer">
+            <button className="carouselButton prev" onClick={prevImage}>
+              <FaChevronLeft />
+            </button>
             <img
-              className="cardsImage"
-              src="/images/imageOne.jpg"
-              alt="cardsImage"
+              className="carouselImage"
+              src={images[currentIndex]}
+              alt={`carousel-${currentIndex}`}
             />
-          </div>
+            <button className="carouselButton next" onClick={nextImage}>
+              <FaChevronRight />
+            </button> 
+          </div> */}
+
+          <Carousel />
           <button
             className="discoveryButton"
             onClick={() => navigate("/events")}

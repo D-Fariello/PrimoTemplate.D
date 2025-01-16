@@ -20,13 +20,12 @@ header.header {
       text-decoration: none;
       font-family: variables.$primary-font-family;
       color: variables.$primary-text-color;
-      &:hover{
+      &:hover {
         text-decoration: underline;
         color: variables.$secondary-text-color;
         text-underline-offset: 7px;
+      }
     }
-    }
-   
   }
 
   .logoImage {
@@ -61,6 +60,7 @@ header.header {
 
     h1.titleFirstSection {
       @include mixins.title-style;
+      text-align: center;
     }
   }
 
@@ -74,10 +74,10 @@ header.header {
     text-align: center;
     cursor: pointer;
 
-    &:hover{
-        background-color: transparent;
-        border: 1px solid white;
-      }
+    &:hover {
+      background-color: transparent;
+      border: 1px solid white;
+    }
   }
 
   .firstImageDiv {
@@ -130,21 +130,21 @@ section.secondHomeSection {
     }
 
     .discoveryButton {
-        @include mixins.button-style;
-        display: inline-block;
-        position: absolute;
-        margin-top: 25%;
-        width: 13%;
-        padding: 12px 24px;
-        text-align: center;
-        cursor: pointer;
+      @include mixins.button-style;
+      display: inline-block;
+      position: absolute;
+      margin-top: 25%;
+      width: 13%;
+      padding: 12px 24px;
+      text-align: center;
+      cursor: pointer;
 
-        &:hover{
-            background-color: transparent;
-            border: 1px solid #985B3C;
-            color: #985B3C;
-          }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #985b3c;
+        color: #985b3c;
       }
+    }
   }
 }
 
@@ -180,10 +180,10 @@ section.secondHomeSection {
       margin-bottom: 3%;
       border: 1px solid transparent;
 
-      &:hover{
+      &:hover {
         background-color: transparent;
-        border: 1px solid #985B3C;
-        color: #985B3C;
+        border: 1px solid #985b3c;
+        color: #985b3c;
       }
     }
   }
@@ -218,10 +218,22 @@ section.secondHomeSection {
     margin-right: 5%;
   }
 
-  img.cardsImage {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
+  .carousel {
+    width: 100%;
+
+    .carouselImages {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    img.carouselImage {
+      height: 150px;
+      width: 250px;
+      object-fit: cover;
+    }
   }
 
   .discoveryButton {
@@ -235,10 +247,71 @@ section.secondHomeSection {
     margin-bottom: 3%;
     border: 1px solid transparent;
 
-    &:hover{
+    &:hover {
+      background-color: transparent;
+      border: 1px solid white;
+    }
+  }
+}
+//////////////// Modal ///////////////////
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  img.imageModal {
+    height: 500px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .modalContent {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .buttonsCheveron {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+    
+
+    button.carouselButton.prev {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      display: flex;
+      margin-right: 90%;
+      flex-direction: row;
+      font-size: 30px;
+      color: white;
+    }
+
+    button.carouselButton.next {
         background-color: transparent;
-        border: 1px solid white;
+        border: none;
+        position: absolute;
+        display: flex;
+        margin-left: 90%;
+        flex-direction: row;
+        font-size: 30px;
+        color: white;
       }
+    }
   }
 }
 
@@ -276,10 +349,10 @@ section.secondHomeSection {
       margin-bottom: 3%;
       border: 1px solid transparent;
 
-      &:hover{
+      &:hover {
         background-color: transparent;
         border: 1px solid white;
-        color: #985B3C;
+        color: #985b3c;
       }
     }
   }
@@ -330,236 +403,234 @@ footer.footerSection {
         display: flex;
         width: 100%;
         color: variables.$secondary-text-color;
-    }
+      }
     }
   }
 }
-
 
 /////////// Responsive Styles ///////////
 
 ////// Tablet: 890px to 1024px ///////
 @media (min-width: 890px) and (max-width: 1024px) {
-    header.header {
+  header.header {
+    nav.main-nav {
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .logoImage {
+      .mainNavLogo-image {
+        width: 60px;
+      }
+    }
+  }
+
+  .firstHomeSection {
+    .titleContent {
+      margin-top: 15%;
+    }
+
+    .discoveryButton {
+      width: 20%;
+    }
+
+    .firstImageDiv img.firstImage {
+      height: 500px;
+    }
+  }
+
+  section.secondHomeSection {
+    flex-direction: column;
+    img.secondImage {
+      margin: 0 auto;
+      width: 80%;
+      height: auto;
+    }
+
+    .textContent {
+      margin-left: 5%;
+      margin-top: 10%;
+      text-align: center;
+
+      h1.titleSecondSection {
+        font-size: 2rem;
+      }
+
+      p.textSecondSection {
+        width: 90%;
+      }
+    }
+  }
+
+  .thirdHomeSection {
+    .titleContent {
+      margin-top: 8%;
+      h1.titleThirdSection {
+        font-size: 2rem;
+      }
+
+      .discoveryButton {
+        width: 25%;
+      }
+    }
+  }
+
+  .forthHomeSection,
+  .fifthHomeSection {
+    .titleContent {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    img.cardsImage,
+    img.fifthImage {
+      width: 200px;
+      height: 200px;
+    }
+
+    p.textForthSection {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .discoveryButton {
+      width: 20%;
+    }
+  }
+
+  footer.footerSection {
+    .footerContainer {
       nav.main-nav {
         padding: 20px;
-        gap: 20px;
       }
-  
+
       .logoImage {
-        .mainNavLogo-image {
-          width: 60px;
-        }
-      }
-    }
-  
-    .firstHomeSection {
-      .titleContent {
-        margin-top: 15%;
-      }
-  
-      .discoveryButton {
-        width: 20%;
-      }
-  
-      .firstImageDiv img.firstImage {
-        height: 500px;
-      }
-    }
-  
-    section.secondHomeSection {
-      flex-direction: column;
-      img.secondImage {
-        margin: 0 auto;
-        width: 80%;
-        height: auto;
-      }
-  
-      .textContent {
-        margin-left: 5%;
-        margin-top: 10%;
-        text-align: center;
-  
-        h1.titleSecondSection {
-          font-size: 2rem;
-        }
-  
-        p.textSecondSection {
-          width: 90%;
-        }
-      }
-    }
-  
-    .thirdHomeSection {
-      .titleContent {
-        margin-top: 8%;
-        h1.titleThirdSection {
-          font-size: 2rem;
-        }
-  
-        .discoveryButton {
-          width: 25%;
-        }
-      }
-    }
-  
-    .forthHomeSection,
-    .fifthHomeSection {
-      .titleContent {
-        h1 {
-          font-size: 1.8rem;
-        }
-      }
-  
-      img.cardsImage,
-      img.fifthImage {
-        width: 200px;
-        height: 200px;
-      }
-  
-      p.textForthSection {
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-  
-      .discoveryButton {
-        width: 20%;
-      }
-    }
-  
-    footer.footerSection {
-      .footerContainer {
-        nav.main-nav {
-          padding: 20px;
-        }
-  
-        .logoImage {
-          margin-left: 3%;
-          margin-top: 2%;
-  
-          p.aboutMe {
-            font-size: 0.9rem;
-          }
+        margin-left: 3%;
+        margin-top: 2%;
+
+        p.aboutMe {
+          font-size: 0.9rem;
         }
       }
     }
   }
-  
-  ////// Mobile: 320px to 768px ///////
-  @media (max-width: 768px) {
-    header.header {
+}
+
+////// Mobile: 320px to 768px ///////
+@media (max-width: 768px) {
+  header.header {
+    nav.main-nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      gap: 15px;
+    }
+
+    .logoImage {
+      position: static;
+      .mainNavLogo-image {
+        width: 50px;
+      }
+    }
+  }
+
+  .firstHomeSection {
+    .titleContent {
+      margin-top: 20%;
+    }
+
+    .discoveryButton {
+      width: 50%;
+    }
+
+    .firstImageDiv img.firstImage {
+      height: 300px;
+    }
+  }
+
+  section.secondHomeSection {
+    flex-direction: column;
+
+    img.secondImage {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+    }
+
+    .textContent {
+      margin: 0;
+      text-align: center;
+
+      h1.titleSecondSection {
+        font-size: 1.8rem;
+      }
+
+      p.textSecondSection {
+        width: 90%;
+      }
+
+      .discoveryButton {
+        width: 50%;
+      }
+    }
+  }
+
+  .thirdHomeSection {
+    .titleContent {
+      margin-top: 10%;
+
+      h1.titleThirdSection {
+        font-size: 1.8rem;
+      }
+
+      .discoveryButton {
+        width: 50%;
+      }
+    }
+  }
+
+  .forthHomeSection,
+  .fifthHomeSection {
+    .titleContent {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+
+    img.cardsImage,
+    img.fifthImage {
+      width: 150px;
+      height: 150px;
+    }
+
+    p.textForthSection {
+      margin: 5%;
+    }
+
+    .discoveryButton {
+      width: 50%;
+    }
+  }
+
+  footer.footerSection {
+    .footerContainer {
       nav.main-nav {
         flex-direction: column;
         align-items: center;
-        padding: 15px;
-        gap: 15px;
+        padding: 10px;
+        gap: 10px;
       }
-  
+
       .logoImage {
-        position: static;
-        .mainNavLogo-image {
-          width: 50px;
-        }
-      }
-    }
-  
-    .firstHomeSection {
-      .titleContent {
-        margin-top: 20%;
-      }
-  
-      .discoveryButton {
-        width: 50%;
-      }
-  
-      .firstImageDiv img.firstImage {
-        height: 300px;
-      }
-    }
-  
-    section.secondHomeSection {
-      flex-direction: column;
-  
-      img.secondImage {
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-      }
-  
-      .textContent {
-        margin: 0;
-        text-align: center;
-  
-        h1.titleSecondSection {
-          font-size: 1.8rem;
-        }
-  
-        p.textSecondSection {
-          width: 90%;
-        }
-  
-        .discoveryButton {
-          width: 50%;
-        }
-      }
-    }
-  
-    .thirdHomeSection {
-      .titleContent {
-        margin-top: 10%;
-  
-        h1.titleThirdSection {
-          font-size: 1.8rem;
-        }
-  
-        .discoveryButton {
-          width: 50%;
-        }
-      }
-    }
-  
-    .forthHomeSection,
-    .fifthHomeSection {
-      .titleContent {
-        h1 {
-          font-size: 1.6rem;
-        }
-      }
-  
-      img.cardsImage,
-      img.fifthImage {
-        width: 150px;
-        height: 150px;
-      }
-  
-      p.textForthSection {
-        margin: 5%;
-      }
-  
-      .discoveryButton {
-        width: 50%;
-      }
-    }
-  
-    footer.footerSection {
-      .footerContainer {
-        nav.main-nav {
-          flex-direction: column;
-          align-items: center;
-          padding: 10px;
-          gap: 10px;
-        }
-  
-        .logoImage {
-          flex-direction: column;
-          margin-left: 0;
-  
-          p.aboutMe {
-            text-align: center;
-            font-size: 0.8rem;
-          }
+        flex-direction: column;
+        margin-left: 0;
+
+        p.aboutMe {
+          text-align: center;
+          font-size: 0.8rem;
         }
       }
     }
   }
-  
+}
