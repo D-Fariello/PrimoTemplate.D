@@ -90,20 +90,6 @@ const Home = () => {
             aspernatur sit necessitatibus dignissimos. Odit voluptate vel
             voluptas a, mollitia minima quia?
           </p>
-          {/* <div className="carouselContainer">
-            <button className="carouselButton prev" onClick={prevImage}>
-              <FaChevronLeft />
-            </button>
-            <img
-              className="carouselImage"
-              src={images[currentIndex]}
-              alt={`carousel-${currentIndex}`}
-            />
-            <button className="carouselButton next" onClick={nextImage}>
-              <FaChevronRight />
-            </button> 
-          </div> */}
-
           <Carousel />
           <button
             className="discoveryButton"

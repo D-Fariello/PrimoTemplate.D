@@ -41,7 +41,7 @@ header.header {
 
     .mainNavLogo-image {
       max-width: 100%;
-      width: 75px;
+      height: 70px;
     }
   }
 }
@@ -117,6 +117,7 @@ section.secondHomeSection {
       @include mixins.title-style;
       font-size: 2.5rem;
       width: 100;
+      text-align: center;
     }
 
     p.textSecondSection {
@@ -127,6 +128,7 @@ section.secondHomeSection {
       line-height: 22px;
       color: variables.$paragraph-color-light;
       width: 65%;
+      text-align: center;
     }
 
     .discoveryButton {
@@ -205,6 +207,7 @@ section.secondHomeSection {
       @include mixins.title-style;
       margin-left: 5%;
       margin-right: 5%;
+      text-align: center;
     }
   }
   p.textForthSection {
@@ -216,6 +219,8 @@ section.secondHomeSection {
     color: variables.$paragraph-color-light;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
   }
 
   .carousel {
@@ -230,7 +235,7 @@ section.secondHomeSection {
     }
 
     img.carouselImage {
-      height: 150px;
+      height:300px;
       width: 250px;
       object-fit: cover;
     }
@@ -321,6 +326,7 @@ section.secondHomeSection {
     h1.titleFifthSection {
       @include mixins.title-style;
       color: black;
+      text-align: center;
     }
 
     img.fifthImage {
@@ -387,7 +393,7 @@ footer.footerSection {
 
       .mainNavLogo-image {
         max-width: 100%;
-        width: 75px;
+        height: 70px;
       }
 
       p.aboutMe {
@@ -445,6 +451,7 @@ footer.footerSection {
 
       h1.titleSecondSection {
         font-size: 2rem;
+      
       }
 
       p.textSecondSection {

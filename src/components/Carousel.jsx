@@ -3,7 +3,6 @@ import Modal from "./Modal";
 
 const Carousel = () => {
   const [modalImage, setModalImage] = useState(null);
-  const [currentModalIndex, setCurrentModalIndex] = useState(0);
 
   const images = [
     "/images/imageOne.jpg",
@@ -15,7 +14,6 @@ const Carousel = () => {
 
   const openModal = (index) => {
     setModalImage(images[index]);
-    setCurrentModalIndex(index);
   };
 
   const closeModal = () => {
@@ -23,18 +21,18 @@ const Carousel = () => {
   };
 
   const nextModalImage = () => {
-    setCurrentModalIndex((prevIndex) => {
-      const nextIndex = (prevIndex + 1) % images.length;
+    setModalImage((currentImage) => {
+      const currentIndex = images.indexOf(currentImage);
+      const nextIndex = (currentIndex + 1) % images.length;
       setModalImage(images[nextIndex]);
-      return nextIndex;
     });
   };
 
   const prevModalImage = () => {
-    setCurrentModalIndex((prevIndex) => {
-      const prevIndexAdjusted = (prevIndex - 1 + images.length) % images.length;
-      setModalImage(images[prevIndexAdjusted]);
-      return prevIndexAdjusted;
+    setModalImage((currentImage) => {
+      const currentIndex = images.indexOf(currentImage);
+      const prevIndex = (currentIndex - 1 + images.length) % images.length;
+      setModalImage(images[prevIndex]);
     });
   };
 
