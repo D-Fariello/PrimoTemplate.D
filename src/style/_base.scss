@@ -425,79 +425,9 @@ footer.footerSection {
   }
 }
 
-////////////////// BIG Mobile: 800px to 890px //////////////////
-@media (max-width: 800px) and (max-width: 890px) {
-  ///////////////// Header /////////////////
-  header.header nav.main-nav {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  ///////////////// Section 1 - BIG Mobile /////////////////
-
-  .firstHomeSection .titleContent h1.titleFirstSection {
-    font-size: 2.5rem;
-  }
-
-  .firstHomeSection .firstImageDiv {
-    height: 500px;
-
-    img.firstImage {
-      height: 500px;
-    }
-  }
-
-  ///////////////// Section 2 - BIG Mobile /////////////////
-
-  section.secondHomeSection .textContent .discoveryButton {
-    @include mixins.button-style-responsive;
-    position: inherit;
-    margin-top: 0;
-  }
-
-  section.secondHomeSection .textContent h1.titleSecondSection {
-    margin: 0 20px 0 20px;
-    font-size: 1.5rem;
-  }
-
-  ///////////////// Section 3 - BIG Mobile /////////////////
-
-  .thirdHomeSection .titleContent h1.titleThirdSection {
-    font-size: 3rem;
-  }
-
-  ///////////////// Section 4 - BIG Mobile /////////////////
-
-  .forthHomeSection .titleContent .titleForthSection {
-    font-size: 3rem;
-  }
-
-  ///////////////// Footer - BIG Mobile /////////////////
-  footer.footerSection .footerContainer nav.main-nav {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  footer.footerSection .footerContainer nav.main-nav a.button-nav {
-    font-size: 12px;
-    width: 40%;
-    position: inherit;
-    margin-top: 0;
-  }
-
-  footer.footerSection .footerContainer .logoImage p.aboutMe {
-    text-align: center;
-  }
-}
-
-////////////////// Mobile: 320px to 800px //////////////////
-@media (min-width: 320px) and (max-width: 800px) {
+////////////////// Mobile: 320px to 798px //////////////////
+@media (min-width: 320px) and (max-width: 798px) {
   ///////////////// Header  - Mobile /////////////////
   header.header {
     display: flex;
@@ -571,6 +501,21 @@ footer.footerSection {
     margin-bottom: 9%;
   }
 
+  section.secondHomeSection .textContent .discoveryButton {
+    @include mixins.button-style-responsive;
+    position: inherit;
+    margin-top: 0;
+  }
+
+  section.secondHomeSection .textContent h1.titleSecondSection {
+    margin: 0 20px 0 20px;
+    font-size: 1.5rem;
+  }
+
+  section.secondHomeSection .textContent .discoveryButton {
+    @include mixins.button-style-responsive;
+  }
+
   ///////////////// Section 3  - Mobile /////////////////
 
   .thirdHomeSection .titleContent img.thirdImage {
@@ -581,6 +526,10 @@ footer.footerSection {
 
   .thirdHomeSection .titleContent .discoveryButton {
     @include mixins.button-style-responsive;
+  }
+
+  .thirdHomeSection .titleContent h1.titleThirdSection {
+    font-size: 2rem;
   }
 
   ///////////////// Section 4  - Mobile /////////////////
@@ -622,7 +571,23 @@ footer.footerSection {
 
   ///////////////// Footer  - Mobile /////////////////
   footer.footerSection .footerContainer nav.main-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
+  }
+
+  footer.footerSection .footerContainer nav.main-nav a.button-nav {
+    font-size: 12px;
+    width: 40%;
+    position: inherit;
+    margin-top: 0;
+  }
+
+  footer.footerSection .footerContainer .logoImage p.aboutMe {
+    text-align: center;
   }
 
   footer.footerSection .footerContainer .logoImage {
