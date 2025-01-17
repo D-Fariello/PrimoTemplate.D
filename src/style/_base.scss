@@ -69,7 +69,6 @@ header.header {
     display: inline-block;
     position: absolute;
     margin-top: 20%;
-    width: 13%;
     padding: 12px 24px;
     text-align: center;
     cursor: pointer;
@@ -98,7 +97,7 @@ section.secondHomeSection {
   background-color: variables.$second-background-color;
 
   img.secondImage {
-    height: 700px;
+    height: 500px;
     display: flex;
     margin-left: 30%;
     margin-top: 20%;
@@ -115,7 +114,7 @@ section.secondHomeSection {
 
     h1.titleSecondSection {
       @include mixins.title-style;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       width: 100;
       text-align: center;
     }
@@ -136,7 +135,6 @@ section.secondHomeSection {
       display: inline-block;
       position: absolute;
       margin-top: 25%;
-      width: 13%;
       padding: 12px 24px;
       text-align: center;
       cursor: pointer;
@@ -165,17 +163,17 @@ section.secondHomeSection {
     h1.titleThirdSection {
       @include mixins.title-style;
       color: black;
+      text-align: center;
     }
 
     img.thirdImage {
-      height: 700px;
+      height: 500px;
     }
 
     .discoveryButton {
       @include mixins.button-style;
       display: inline-block;
       margin-top: 2%;
-      width: 13%;
       padding: 12px 24px;
       text-align: center;
       cursor: pointer;
@@ -232,11 +230,12 @@ section.secondHomeSection {
       justify-content: center;
       gap: 10px;
       cursor: pointer;
+      flex-wrap: wrap !important;
     }
 
     img.carouselImage {
-      height: 300px;
-      width: 250px;
+      height: 250px;
+      width: 200px;
       object-fit: cover;
     }
   }
@@ -245,7 +244,6 @@ section.secondHomeSection {
     @include mixins.button-style;
     display: inline-block;
     margin-top: 2%;
-    width: 13%;
     padding: 12px 24px;
     text-align: center;
     cursor: pointer;
@@ -338,7 +336,6 @@ section.secondHomeSection {
       @include mixins.button-style;
       display: inline-block;
       margin-top: 2%;
-      width: 13%;
       padding: 12px 24px;
       text-align: center;
       cursor: pointer;
@@ -404,275 +401,152 @@ footer.footerSection {
   }
 }
 
-/////////// Responsive Styles ///////////
+/////////////////// Responsive Style //////////////////////////////
 
-////// Tablet: 890px to 1024px ///////
+////////////////// Tablet: 890px to 1024px ///////
 @media (min-width: 890px) and (max-width: 1024px) {
-  header.header {
-    nav.main-nav {
-      padding: 20px;
-      gap: 20px;
-    }
-
-    .logoImage {
-      .mainNavLogo-image {
-        width: 60px;
-      }
-    }
+  header.header nav.main-nav {
+    gap: 20px;
+    font-size: 13px;
   }
 
-  .firstHomeSection {
-    .titleContent {
-      margin-top: 15%;
-    }
+  .firstHomeSection .titleContent h1.titleFirstSection {
+    font-size: 3rem;
+  }
 
-    .discoveryButton {
-      width: 20%;
-    }
+  section.secondHomeSection .textContent .discoveryButton {
+    margin-top: 0%;
+    position: inherit;
+    width: 30%;
+  }
 
-    .firstImageDiv img.firstImage {
+  .thirdHomeSection .titleContent h1.titleThirdSection {
+    font-size: 3rem;
+  }
+}
+
+////////////////// Mobile: 320px to 800px //////////////////
+@media (max-width: 800px) and (max-width: 890px){
+  header.header nav.main-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstHomeSection .titleContent h1.titleFirstSection {
+    font-size: 2.5rem;
+  }
+
+  .firstHomeSection .firstImageDiv {
+    height: 500px;
+
+    img.firstImage {
       height: 500px;
     }
   }
 
-  section.secondHomeSection {
-    flex-direction: column;
-    img.secondImage {
-      margin: 0 auto;
-      width: 80%;
-      height: auto;
-    }
-
-    .textContent {
-      margin-left: 5%;
-      margin-top: 10%;
-      text-align: center;
-
-      h1.titleSecondSection {
-        font-size: 2rem;
-      }
-
-      p.textSecondSection {
-        width: 90%;
-      }
-
-      .discoveryButton {
-        width: 50%;
-        margin-top: 30%;
-    }
-    }
+  section.secondHomeSection .textContent .discoveryButton {
+    font-size: 12px;
+    width: 40%;
+    position: inherit;
+    margin-top: 0;
   }
 
-  .thirdHomeSection {
-    .titleContent {
-      margin-top: 8%;
-      
-      h1.titleThirdSection {
-        font-size: 2rem;
-      }
-
-    //   img.thirdImage {
-    //     height: 400px !important; 
-    //   }
-
-      .discoveryButton {
-        width: 25%;
-      }
-    }
+  section.secondHomeSection .textContent h1.titleSecondSection {
+    margin: 0 20px 0 20px;
+    font-size: 1.5rem;
   }
 
-  
-  .forthHomeSection{
-    .carousel.carouselImages {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        cursor: pointer;
-        flex-wrap: wrap !important;
-      }
+  .thirdHomeSection .titleContent h1.titleThirdSection {
+    font-size: 3rem;
+  }
+  .forthHomeSection .titleContent .titleForthSection {
+    font-size: 3rem;
   }
 
-  .fifthHomeSection {
+  footer.footerSection .footerContainer nav.main-nav {
     display: flex;
-    width: 100%;
+    gap: 10px;
+    justify-content: flex-end;
     flex-direction: column;
-    background-color: #221b19;
-    align-items: center;
-
-    .titleContent {
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
-
-    img.cardsImage,
-    img.fifthImage {
-      width: 200px;
-      height: 200px;
-    }
-
-    p.textForthSection {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-
-    .discoveryButton {
-      width: 20%;
-    }
+    align-items: flex-end;
   }
 
-  footer.footerSection {
-    .footerContainer {
-      nav.main-nav {
-        padding: 20px;
-      }
+  footer.footerSection .footerContainer nav.main-nav a.button-nav {
+    font-size: 12px;
+    width: 40%;
+    position: inherit;
+    margin-top: 0;
+  }
 
-      .logoImage {
-        margin-left: 3%;
-        margin-top: 2%;
-
-        p.aboutMe {
-          font-size: 0.9rem;
-        }
-      }
-    }
+  footer.footerSection .footerContainer .logoImage p.aboutMe {
+    text-align: center;
   }
 }
 
-////// Mobile: 320px to 768px ///////
-@media (max-width: 768px) {
+////////////////// Mobile: 320px to 800px //////////////////
+@media (min-width: 320px) and (max-width: 800px) {
   header.header {
-    nav.main-nav {
+    background: #eae5de;
+  }
+
+    header.header nav.main-nav {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
       flex-direction: column;
       align-items: center;
-      padding: 15px;
-      gap: 15px;
     }
 
-    .logoImage {
-      position: static;
-      .mainNavLogo-image {
-        width: 50px;
+    header.header .logoImage .mainNavLogo-image {
+      margin-left: 45%;
+    }
+
+    .firstHomeSection .discoveryButton {
+      @include mixins.button-style-responsive;
+      margin-top: 180px;
+    }
+
+    .firstHomeSection .titleContent h1.titleFirstSection {
+      font-size: 2rem;
+    }
+
+    .firstHomeSection .firstImageDiv {
+      height: 300px;
+
+      img.firstImage {
+        height: 300px;
       }
     }
-  }
 
-  .firstHomeSection {
-    .titleContent {
+    section.secondHomeSection {
+      display: flex;
+      flex-direction: column;
+      background-color: #221b19;
+    }
+
+    section.secondHomeSection img.secondImage {
+      height: 300px;
+      display: flex;
+      margin-left: 0;
       margin-top: 20%;
+      margin-bottom: 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
     }
 
-    .discoveryButton {
-      width: 50%;
+    section.secondHomeSection .textContent {
+      margin-left: 5%;
+      margin-bottom: 9%;
     }
 
-    .firstImageDiv img.firstImage {
-        height: 700px;
-    }
-  }
-
-  section.secondHomeSection {
-    flex-direction: column;
-
-    img.secondImage {
-      margin: 0 auto;
-      width: 100%;
-      height: auto;
-    }
-
-    .textContent {
-      margin: 0;
-      text-align: center;
-      margin-bottom: 10%;
-
-      h1.titleSecondSection {
-        font-size: 1.8rem;
-      }
-
-      p.textSecondSection {
-        width: 90%;
-      }
-
-      .discoveryButton {
-        width: 50%;
-        margin-top: 30%;
-      }
+    .thirdHomeSection .titleContent img.thirdImage {
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
     }
   }
-
-  .thirdHomeSection {
-    .titleContent {
-      margin-top: 10%;
-
-      h1.titleThirdSection {
-        font-size: 1.8rem;
-      }
-
-      .discoveryButton {
-        width: 50%;
-      }
-    }
-  }
-
-  .thirdHomeSection .titleContent img.thirdImage {
-    height: 400px;
-}
-
-  .forthHomeSection .carousel .carouselImages {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    cursor: pointer;
-    flex-wrap: wrap;
-
-}
-
-.forthHomeSection .discoveryButton {
-   width: 20%;
-}
-
-  .fifthHomeSection {
-    .titleContent {
-      h1 {
-        font-size: 1.6rem;
-      }
-    }
-
-    img.cardsImage,
-    img.fifthImage {
-      width: 150px;
-      height: 150px;
-    }
-
-    p.textForthSection {
-      margin: 5%;
-    }
-
-    .discoveryButton {
-      width: 50%;
-    }
-  }
-
-  footer.footerSection {
-    .footerContainer {
-      nav.main-nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        gap: 10px;
-      }
-
-      .logoImage {
-        flex-direction: column;
-        margin-left: 0;
-
-        p.aboutMe {
-          text-align: center;
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-}

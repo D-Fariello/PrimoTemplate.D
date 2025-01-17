@@ -19,6 +19,7 @@ $font-aileron: 'Lora', sans-serif;
 $buttons-font-size: 12px;
 $buttons-text-color: white;
 $buttons-background-color:#985B3C;
+$buttons-width: 20%;
 
 
 // Carousel
@@ -30,3 +31,11 @@ $carousel-display: flex;
 $carousel-font-size: 30px;
 $carousel-cursor: pointer;
 $carousel-color: white;
+
+
+// Buttons responsive
+
+$buttons-responsive-font-size: 12px;
+$buttons-responsive-text-color: white;
+$buttons-responsive-background-color:#985B3C;
+$buttons-responsive-width: 50%;
