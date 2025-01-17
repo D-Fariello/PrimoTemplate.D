@@ -425,8 +425,9 @@ footer.footerSection {
   }
 }
 
-////////////////// Mobile: 320px to 800px //////////////////
-@media (max-width: 800px) and (max-width: 890px){
+////////////////// BIG Mobile: 800px to 890px //////////////////
+@media (max-width: 800px) and (max-width: 890px) {
+  ///////////////// Header /////////////////
   header.header nav.main-nav {
     display: flex;
     gap: 10px;
@@ -434,6 +435,8 @@ footer.footerSection {
     flex-direction: column;
     align-items: center;
   }
+
+  ///////////////// Section 1 - BIG Mobile /////////////////
 
   .firstHomeSection .titleContent h1.titleFirstSection {
     font-size: 2.5rem;
@@ -447,9 +450,10 @@ footer.footerSection {
     }
   }
 
+  ///////////////// Section 2 - BIG Mobile /////////////////
+
   section.secondHomeSection .textContent .discoveryButton {
-    font-size: 12px;
-    width: 40%;
+    @include mixins.button-style-responsive;
     position: inherit;
     margin-top: 0;
   }
@@ -459,13 +463,19 @@ footer.footerSection {
     font-size: 1.5rem;
   }
 
+  ///////////////// Section 3 - BIG Mobile /////////////////
+
   .thirdHomeSection .titleContent h1.titleThirdSection {
     font-size: 3rem;
   }
+
+  ///////////////// Section 4 - BIG Mobile /////////////////
+
   .forthHomeSection .titleContent .titleForthSection {
     font-size: 3rem;
   }
 
+  ///////////////// Footer - BIG Mobile /////////////////
   footer.footerSection .footerContainer nav.main-nav {
     display: flex;
     gap: 10px;
@@ -488,65 +498,134 @@ footer.footerSection {
 
 ////////////////// Mobile: 320px to 800px //////////////////
 @media (min-width: 320px) and (max-width: 800px) {
+  ///////////////// Header  - Mobile /////////////////
   header.header {
+    display: flex;
     background: #eae5de;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
   }
 
-    header.header nav.main-nav {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
+  header.header nav.main-nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+  }
 
-    header.header .logoImage .mainNavLogo-image {
-      margin-left: 45%;
-    }
+  header.header .logoImage .mainNavLogo-image {
+    margin-left: 0;
+  }
 
-    .firstHomeSection .discoveryButton {
-      @include mixins.button-style-responsive;
-      margin-top: 180px;
-    }
+  ///////////////// Section 1  - Mobile /////////////////
 
-    .firstHomeSection .titleContent h1.titleFirstSection {
-      font-size: 2rem;
-    }
+  .firstHomeSection .discoveryButton {
+    @include mixins.button-style-responsive;
+    margin-top: 180px;
+  }
 
-    .firstHomeSection .firstImageDiv {
+  .firstHomeSection .titleContent h1.titleFirstSection {
+    font-size: 2rem;
+  }
+
+  .firstHomeSection .firstImageDiv {
+    height: 300px;
+
+    img.firstImage {
       height: 300px;
-
-      img.firstImage {
-        height: 300px;
-      }
-    }
-
-    section.secondHomeSection {
-      display: flex;
-      flex-direction: column;
-      background-color: #221b19;
-    }
-
-    section.secondHomeSection img.secondImage {
-      height: 300px;
-      display: flex;
-      margin-left: 0;
-      margin-top: 20%;
-      margin-bottom: 0;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      align-content: center;
-    }
-
-    section.secondHomeSection .textContent {
-      margin-left: 5%;
-      margin-bottom: 9%;
-    }
-
-    .thirdHomeSection .titleContent img.thirdImage {
-      height: 300px;
-      width: 300px;
-      object-fit: cover;
     }
   }
+
+  ///////////////// Section 2  - Mobile /////////////////
+
+  section.secondHomeSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #221b19;
+  }
+
+  .secondImageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.secondHomeSection img.secondImage {
+    height: 300px;
+    display: flex;
+    margin-left: 0;
+    margin-top: 20%;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  section.secondHomeSection .textContent {
+    margin-left: 5%;
+    margin-bottom: 9%;
+  }
+
+  ///////////////// Section 3  - Mobile /////////////////
+
+  .thirdHomeSection .titleContent img.thirdImage {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+
+  .thirdHomeSection .titleContent .discoveryButton {
+    @include mixins.button-style-responsive;
+  }
+
+  ///////////////// Section 4  - Mobile /////////////////
+
+  .forthHomeSection .titleContent .titleForthSection {
+    font-size: 2rem;
+  }
+
+  .forthHomeSection .discoveryButton {
+    @include mixins.button-style-responsive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  ///////////////// Section 5  - Mobile /////////////////
+
+  .fifthHomeSection .titleContent h1.titleFifthSection {
+    font-size: 2.5rem;
+  }
+
+  .fifthHomeSection .titleContent .discoveryButton {
+    @include mixins.button-style-responsive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  ////////////////// Modal - Mobile /////////////////
+  
+  .modalOverlay img.imageModal {
+    height: 300px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.modalOverlay .modalContent .buttonsCheveron{
+    width: 90%;
+}
+
+  ///////////////// Footer  - Mobile /////////////////
+  footer.footerSection .footerContainer nav.main-nav {
+    text-align: right;
+  }
+
+  footer.footerSection .footerContainer .logoImage {
+    width: 50%;
+  }
+}
