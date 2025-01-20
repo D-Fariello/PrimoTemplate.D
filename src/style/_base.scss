@@ -1,6 +1,10 @@
 @use "variables";
 @use "mixins";
 
+.backgroundColor {
+  background-color: white !important;
+}
+
 body {
   margin: 0;
 }
@@ -557,7 +561,7 @@ footer.footerSection {
     margin: 0 20px 0 20px;
     font-size: 1.5rem;
   }
-
+  
   section.secondHomeSection .textContent .discoveryButton {
     @include mixins.button-style-responsive;
   }

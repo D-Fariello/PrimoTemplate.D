@@ -16,7 +16,7 @@ const PersonalPage = () => {
           />
         </div>
       </section>
-      <section className="secondHomeSection">
+      <section className="secondHomeSection backgroundColor">
         <div className="secondImageDiv">
           <img
             className="secondImage"
@@ -25,7 +25,7 @@ const PersonalPage = () => {
           />
         </div>
         <div className="textContent">
-          <h1 className="titleSecondSection">Who am I ?</h1>
+          <h1 className="titleSecondSection ">Who am I ?</h1>
           <p className="textSecondSection">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
             labore vel sapiente neque? Dicta accusantium iure magnam vitae

@@ -1,0 +1,598 @@
+.backgroundColor {
+  background-color: white !important;
+}
+
+body {
+  margin: 0;
+}
+
+header.header nav.main-nav {
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  border-bottom: 2px solid black;
+  background-color: #EAE5DE;
+}
+header.header nav.main-nav a.button-nav {
+  text-decoration: none;
+  font-family: "Questrial";
+  color: #985B3C;
+}
+header.header nav.main-nav a.button-nav:hover {
+  text-decoration: underline;
+  color: #351707;
+  text-underline-offset: 7px;
+}
+header.header .logoImage {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  justify-content: flex-start;
+}
+header.header .logoImage .mainNavLogo {
+  display: flex;
+  align-items: center;
+}
+header.header .logoImage .mainNavLogo-image {
+  max-width: 100%;
+  height: 70px;
+}
+
+.firstHomeSection .titleContent {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-top: 10%;
+  width: 100%;
+}
+.firstHomeSection .titleContent h1.titleFirstSection {
+  font-family: "Questrial";
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+.firstHomeSection .discoveryButton {
+  font-size: 12px;
+  color: white;
+  background-color: #985B3C;
+  border: none;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 20%;
+  padding: 12px 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.firstHomeSection .discoveryButton:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.firstHomeSection .firstImageDiv {
+  height: 700px;
+}
+.firstHomeSection .firstImageDiv img.firstImage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 700px;
+  width: 100%;
+}
+
+section.secondHomeSection {
+  display: flex;
+  flex-direction: row;
+  background-color: #221B19;
+}
+section.secondHomeSection img.secondImage {
+  height: 500px;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
+section.secondHomeSection .textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+section.secondHomeSection .textContent h1.titleSecondSection {
+  font-family: "Questrial";
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 100;
+  font-size: 2.3rem;
+  width: 100;
+  text-align: center;
+}
+section.secondHomeSection .textContent p.textSecondSection {
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  color: #ACACAC;
+  width: 65%;
+  text-align: center;
+}
+section.secondHomeSection .textContent .discoveryButton {
+  font-size: 12px;
+  color: white;
+  background-color: #985B3C;
+  border: none;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 20%;
+  padding: 12px 24px;
+  text-align: center;
+  cursor: pointer;
+}
+section.secondHomeSection .textContent .discoveryButton:hover {
+  background-color: transparent;
+  border: 1px solid #985b3c;
+  color: #985b3c;
+}
+
+.thirdHomeSection .titleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+  background-color: #FFFFFF;
+  flex-direction: column;
+}
+.thirdHomeSection .titleContent h1.titleThirdSection {
+  font-family: "Questrial";
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+}
+.thirdHomeSection .titleContent img.thirdImage {
+  height: 500px;
+}
+.thirdHomeSection .titleContent .discoveryButton {
+  font-size: 12px;
+  color: white;
+  background-color: #985B3C;
+  border: none;
+  width: 20%;
+  display: inline-block;
+  margin-top: 2%;
+  padding: 12px 24px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 3%;
+  border: 1px solid transparent;
+}
+.thirdHomeSection .titleContent .discoveryButton:hover {
+  background-color: transparent;
+  border: 1px solid #985b3c;
+  color: #985b3c;
+}
+
+.forthHomeSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #221B19;
+}
+.forthHomeSection .titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.forthHomeSection .titleContent .titleForthSection {
+  font-family: "Questrial";
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 100;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+.forthHomeSection p.textForthSection {
+  font-family: "Questrial";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  color: #ACACAC;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.forthHomeSection .carousel {
+  width: 100%;
+}
+.forthHomeSection .carousel .carouselImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  flex-wrap: wrap !important;
+}
+.forthHomeSection .carousel img.carouselImage {
+  height: 250px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.forthHomeSection .discoveryButton {
+  font-size: 12px;
+  color: white;
+  background-color: #985B3C;
+  border: none;
+  width: 20%;
+  display: inline-block;
+  margin-top: 2%;
+  padding: 12px 24px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 3%;
+  border: 1px solid transparent;
+}
+.forthHomeSection .discoveryButton:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modalOverlay img.imageModal {
+  height: 500px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.modalOverlay .modalContent {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.modalOverlay .modalContent .buttonsCheveron {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+}
+.modalOverlay .modalContent .buttonsCheveron button.carouselButton.prev {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  margin-right: 90%;
+  flex-direction: row;
+}
+.modalOverlay .modalContent .buttonsCheveron button.carouselButton.next {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  margin-left: 90%;
+  flex-direction: row;
+  font-size: 30px;
+}
+
+.fifthHomeSection .titleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+  background-color: #FFFFFF;
+  flex-direction: column;
+}
+.fifthHomeSection .titleContent h1.titleFifthSection {
+  font-family: "Questrial";
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+}
+.fifthHomeSection .titleContent img.fifthImage {
+  height: 250px;
+  width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fifthHomeSection .titleContent .discoveryButton {
+  font-size: 12px;
+  color: white;
+  background-color: #985B3C;
+  border: none;
+  width: 20%;
+  display: inline-block;
+  margin-top: 2%;
+  padding: 12px 24px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 3%;
+  border: 1px solid transparent;
+}
+.fifthHomeSection .titleContent .discoveryButton:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #985b3c;
+}
+
+footer.footerSection .footerContainer {
+  background-color: #EAE5DE;
+  height: 250px;
+}
+footer.footerSection .footerContainer nav.main-nav {
+  padding: 30px;
+  display: flex;
+  gap: 35px;
+  justify-content: flex-end;
+  border-top: 2px solid black;
+  background-color: #EAE5DE;
+}
+footer.footerSection .footerContainer nav.main-nav a.button-nav {
+  text-decoration: none;
+  font-family: "Questrial";
+  color: #985B3C;
+}
+footer.footerSection .footerContainer .logoImage {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 4px;
+  width: 20%;
+}
+footer.footerSection .footerContainer .logoImage .mainNavLogo {
+  display: flex;
+  align-items: center;
+}
+footer.footerSection .footerContainer .logoImage .mainNavLogo-image {
+  max-width: 100%;
+  height: 70px;
+}
+footer.footerSection .footerContainer .logoImage p.aboutMe {
+  display: flex;
+  width: 100%;
+  color: #351707;
+}
+
+@media (min-width: 799px) and (max-width: 1024px) {
+  header.header nav.main-nav {
+    font-size: 13px;
+    gap: 10px;
+  }
+  .firstHomeSection .firstImageDiv {
+    height: 600px;
+  }
+  .firstHomeSection .firstImageDiv img.firstImage {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }
+  .firstHomeSection .titleContent h1.titleFirstSection {
+    font-size: 3rem;
+  }
+  section.secondHomeSection .textContent .discoveryButton {
+    margin-top: 0%;
+    position: inherit;
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+  }
+  section.secondHomeSection img.secondImage {
+    margin-left: 25%;
+  }
+  .thirdHomeSection .titleContent h1.titleThirdSection {
+    font-size: 3rem;
+  }
+  footer.footerSection .footerContainer nav.main-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  footer.footerSection .footerContainer nav.main-nav a.button-nav {
+    font-size: 15px;
+    width: 40%;
+    position: inherit;
+    margin-top: 0;
+  }
+  footer.footerSection .footerContainer .logoImage p.aboutMe {
+    text-align: center;
+  }
+  footer.footerSection .footerContainer .logoImage {
+    width: 50%;
+  }
+  footer.footerSection .footerContainer .logoImage .mainNavLogo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (min-width: 320px) and (max-width: 798px) {
+  header.header {
+    display: flex;
+    background: #eae5de;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+  header.header nav.main-nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+  }
+  header.header .logoImage .mainNavLogo-image {
+    margin-left: 0;
+  }
+  .firstHomeSection .discoveryButton {
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+    margin-top: 180px;
+  }
+  .firstHomeSection .titleContent h1.titleFirstSection {
+    font-size: 2rem;
+  }
+  .firstHomeSection .firstImageDiv {
+    height: 300px;
+  }
+  .firstHomeSection .firstImageDiv img.firstImage {
+    height: 300px;
+  }
+  section.secondHomeSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #221b19;
+  }
+  .secondImageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.secondHomeSection img.secondImage {
+    height: 300px;
+    display: flex;
+    margin-left: 0;
+    margin-top: 20%;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  section.secondHomeSection .textContent {
+    margin-left: 5%;
+    margin-bottom: 9%;
+  }
+  section.secondHomeSection .textContent .discoveryButton {
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+    position: inherit;
+    margin-top: 0;
+  }
+  section.secondHomeSection .textContent h1.titleSecondSection {
+    margin: 0 20px 0 20px;
+    font-size: 1.5rem;
+  }
+  section.secondHomeSection .textContent .discoveryButton {
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+  }
+  .thirdHomeSection .titleContent img.thirdImage {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .thirdHomeSection .titleContent .discoveryButton {
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+  }
+  .thirdHomeSection .titleContent h1.titleThirdSection {
+    font-size: 2rem;
+  }
+  .forthHomeSection .titleContent .titleForthSection {
+    font-size: 2rem;
+  }
+  .forthHomeSection .discoveryButton {
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .fifthHomeSection .titleContent h1.titleFifthSection {
+    font-size: 2.5rem;
+  }
+  .fifthHomeSection .titleContent .discoveryButton {
+    font-size: 12px;
+    color: white;
+    background-color: #985B3C;
+    border: none;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modalOverlay img.imageModal {
+    height: 300px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .modalOverlay .modalContent .buttonsCheveron {
+    width: 90%;
+  }
+  footer.footerSection .footerContainer nav.main-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  footer.footerSection .footerContainer nav.main-nav a.button-nav {
+    font-size: 12px;
+    width: 40%;
+    position: inherit;
+    margin-top: 0;
+  }
+  footer.footerSection .footerContainer .logoImage p.aboutMe {
+    text-align: center;
+  }
+  footer.footerSection .footerContainer .logoImage {
+    width: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */
